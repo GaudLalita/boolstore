@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>LANDING PAGE</title>
+
+        <style type="text/css">
+
+       .{padding:0;  margin:0; box-sizing:border-box; }
+        
+        header{
+            display:flex;
+            font-family:roboto,arial;
+            width:100%;
+            height:100vh;
+          background-image:url('bgpage.jpeg');
+            background-size:cover;
+        }
+        .logo-page{
+            font-size:1.5em;
+            letter-spacing:2px;
+            font-weight:bold;
+            color:white;
+            
+        }
+nav{
+    width:100%;
+    height:100px;
+    
+    
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+ .menu a{
+    text-decoration:none;
+    color:rgb(25, 16, 16);
+    padding:10px 20px;
+    font-size:16px;
+    position:relative;
+ }
+.menu a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    border-bottom:2px solid rgb(228, 15, 15);
+    transition:0.4s linear;
+}
+
+.menu a:hover:before{
+width:90%
+}
+.register a{
+    text-decoration:none;
+    color:white;
+    padding:10px 20px;
+    background:indianred;
+    border-radius:8px;
+transition:0.5;
+}
+.register a:hover{
+background-color:transparent;
+border:1px solid indianred;
+}
+
+
+.text{
+    max-width:650px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    color:rgb(0,0, 0);
+}
+.text span{
+    letter-spacing:5px;
+}
+
+.text h1{
+    font-size:
+    2.5em;
+}
+.text a{
+text-decoration:none;
+background:brown;
+color:white;
+padding:10px 20px;
+letter-spacing:5px;
+transition:0.4s;
+
+}
+
+.text a:hover{
+    background:transparent;
+    border:1px solid indigo;
+    color:black;
+    
+}
+.search{
+    width:250px;
+}
+.font{
+    width:700px;
+}
+
+        </style>
+        </head>
+        <body>
+            
+            <header>
+                <nav>
+                    <div class="logo-page">
+            YourBookStore.com 
+                   </div>
+                   
+                       
+                   <div class="menu">
+                    <input class="search" type="text" placeholder="Search By Auuthor or Book name" ></input>
+                    <a href="#">Home</a>
+                    <a href="#">Books</a>
+                     <a href="#">Best Offers</a>
+                     <a href="#">Mostsoldbooks</a>
+                     <a href="#">Contact Us</a>
+                     <a href="#">Feedback</a>
+                   
+                     
+                   </div>
+<div class="register">
+  <a href="register.html"> Register</a> 
+</div>
+
+</nav>
+
+<section class="text">
+    <span>YOUR BOOK STORE</span>
+    <h1 class="font"> EXPLORE THE WORLD THROUGH THE BOOKS</h1>
+    <br>
+    <a href="catalog.HTML">OUR CATALOG</a>
+    
+    
+    </section>
+
+
+</header>
+
+                   
+               
+           
+        </body>
+        
+    
+</html>
